@@ -6,7 +6,7 @@ import requests
 queryOptions  = (('apikey','YOUR_API_KEY'),('url','https://www.facebook.com/'),('landscape',True));
 
 response = requests.get(
-    'https://api.wepdf.io/render', queryOptions)
+    'https://api.wepdf.io/v1/render', queryOptions)
 
 # save to file
 response.raise_for_status()

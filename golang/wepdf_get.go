@@ -11,7 +11,7 @@ func main() {
     API_KEY := "YOUR_API_KEY"
 
     client := http.Client{}
-    request, err := http.NewRequest("GET", "https://api.wepdf.io/render", nil)
+    request, err := http.NewRequest("GET", "https://api.wepdf.io/v1/render", nil)
 
     q := request.URL.Query()
     q.Add("apikey", API_KEY)

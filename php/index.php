@@ -1,6 +1,6 @@
 <?php
 
-$base_url = "http://api.wepdf.io/";
+$base_url = "http://api.wepdf.io/v1/";
 
 //GET request
 $curl = curl_init();

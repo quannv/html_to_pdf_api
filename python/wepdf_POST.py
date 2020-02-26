@@ -8,7 +8,7 @@ headers = {'content-type': 'text/html'}
 import requests
 
 response = requests.post(
-    'https://api.wepdf.io/render?apikey=YOUR_API_KEY&landscape=true',
+    'https://api.wepdf.io/v1/render?apikey=YOUR_API_KEY&landscape=true',
     content.encode('utf-8'),headers=headers
 )
 

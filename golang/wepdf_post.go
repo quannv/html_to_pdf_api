@@ -17,7 +17,7 @@ func main() {
     var jsonStr = []byte(text)
 
     client := http.Client{}
-    request, err := http.NewRequest("POST", "https://api.wepdf.io/render", bytes.NewBuffer(jsonStr))
+    request, err := http.NewRequest("POST", "https://api.wepdf.io/v1/render", bytes.NewBuffer(jsonStr))
     if err != nil {
         log.Fatalln(err)
     }
@@ -40,7 +40,7 @@ func main() {
             log.Fatalln(err)
         }
         // write the response to file
-        ioutil.WriteFile("wepdf.pdf", body, 0644)
+        ioutil.WriteFile("wepdf_post.pdf", body, 0644)
     } else {
         // An error occurred
         var result map[string]interface{}
