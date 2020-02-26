@@ -32,7 +32,7 @@ func main() {
             log.Fatalln(err)
         }
         // write the response to file
-        ioutil.WriteFile("wikipedia.pdf", body, 0644)
+        ioutil.WriteFile("wepdf.pdf", body, 0644)
     } else {
         // An error occurred
         var result map[string]interface{}
